@@ -8,8 +8,10 @@ import static java.util.Objects.requireNonNull;
  */
 public class Remark {
     public final String value;
-    
-    @SuppressWarnings("checkstyle:MissingJavadocMethod")
+
+    /**
+     * Instantiates Remark object with remark
+     */
     public Remark(String remark) {
         requireNonNull(remark);
         value = remark;
