@@ -89,15 +89,21 @@ Examples:
 * `add n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01`
 * `add n/Betsy Crowe t/friend e/betsycrowe@example.com a/Newgate Prison p/1234567 t/criminal`
 
-#### Adding profile picture: `addPicture`
+#### Adding profile picture using keyboard: `addPicture`
 
-Adds a profile picture to the patient’s profile. 
+Adds a profile picture to the patient’s profile by specifying the filepath of the desired profile picture.
 
 Format: `addPicture INDEX f/FILE_PATH`
 
 Examples:
-*  `addPicture 1 f/data/profile_picture.png` Adds the specified profile picture to the 1st patient.
-*  `addPicture 1 f/downloads/profile_picture.png` Replaces the existing profile picture with an updated profile picture for the 1st patient
+*  `addPicture 1 f/data/profile_picture.png` Replaces the existing profile picture with 'profile_picture.png' for the 1st patient.
+*  `addPicture 1 f/downloads/profile_picture.png` Replaces the existing profile picture with 'profile_picture.png' found 
+                                                  in 'downloads' folder for the 1st patient
+
+#### Adding profile picture using mouse
+Adds a profile picture to the patient's profile simply using drag and drop.
+1. Select your desired patient profile picture and drag it onto the space reserved for the patient's profile picture in CliniCal.
+2. Release your mouse button and the patient's profile picture would be updated.
 
 #### Listing all patients: `list`
 
